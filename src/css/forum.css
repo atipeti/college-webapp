@@ -1,0 +1,29 @@
+@import url("common.css");
+
+#addComment {
+	margin-top: 20px;
+}
+.post {
+	position: relative;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 10px;
+}
+.post:hover {
+	border: 1px solid #000000;
+}
+.span1 {
+	float: left;
+	font-weight: bold;
+}
+.span2 {
+	float: right;
+	font-style: italic;
+}
+.post a {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: normal;
+}

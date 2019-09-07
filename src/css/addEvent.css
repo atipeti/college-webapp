@@ -1,0 +1,55 @@
+@import url("common.css");
+@import url("tableCommon.css");
+
+.options {
+	margin-top: 5px;
+}
+#optionsDiv a {
+	cursor: pointer;
+}
+.form-inline .form-group {
+	margin-right: 20px;
+}
+.form-inline input, select {
+	margin: 5px;
+	font-size: smaller;
+}
+.form-inline .form-control {
+	padding: 5px;
+	font-size: smaller;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+table.table-bordered > tbody > tr > th {
+	border: 1px solid #000000;
+}
+table.table-bordered > tbody > tr > td {
+	border: 1px solid #000000;
+}
+th {
+	text-align: center;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+td a {
+	color: #000000;
+	text-decoration: underline;
+}
+.pastEvent, .pastEvent a {
+	color: #555555 !important;
+	text-decoration: line-through !important;
+}
+p {
+	margin: 10px;
+}
+
+@media
+only screen and (max-width: 1248px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+	td:nth-of-type(1):before { content: "Esemény"; }
+	td:nth-of-type(2):before { content: "Meghirdető"; }
+	td:nth-of-type(3):before { content: "Időpont"; }
+	td:nth-of-type(4):before { content: "Visszajelzési határidő"; }
+}

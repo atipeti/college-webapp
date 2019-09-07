@@ -1,0 +1,53 @@
+@import url("common.css");
+
+tr:hover {
+	background-color: #CCCCCC;
+}
+table.table-bordered > tbody > tr > th {
+	border: 1px solid #000000;
+	text-align: center;
+	background-color: #CCCCCC;
+}
+table.table-bordered > tbody > tr > td {
+	border: 1px solid #000000;
+}
+.today {
+	background-color: #BBBBBB !important;
+}
+.reservation {
+	padding: 2px;
+	font-size: small;
+	text-align: center;
+}
+.reservation a {
+	color: #000000;
+	text-decoration: underline;
+}
+.exclusive {
+	background-color: red;
+}
+.exclusive a {
+	color: white;
+}
+#coomonRoomsDiv a {
+	color: #000000;
+	text-decoration: underline;
+}
+h4 {
+	position: relative;
+	float: left;
+}
+.button {
+	position: relative;
+	float: right;
+	margin: 5px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+}
+.button:hover {
+	border: 1px solid #000000;
+}
+.firstCol {
+	text-align: right;
+}

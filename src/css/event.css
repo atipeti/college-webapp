@@ -1,0 +1,104 @@
+@import url("common.css");
+
+.feedbackTable, #algoTable {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+table.table-bordered > tbody > tr > th {
+	border: 1px solid #000000;
+}
+table.table-bordered > tbody > tr > td {
+	border: 1px solid #000000;
+}
+th {
+	text-align: center;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+table a {
+	color: #000000 !important;
+	text-decoration: underline;
+}
+.firstCol {
+	text-align: right;
+}
+.button {
+	margin: 5px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+}
+.button:hover {
+	border: 1px solid #000000;
+}
+.progress {
+	height: 20px;
+	margin-top: 5px;
+	background-color: #FFFFFF;
+	border: 1px solid #777777;
+}
+.progress-bar {
+	background-color: #CCCCCC;
+	color: #000000;
+}
+#feedbackDiv p {
+	font-style: italic;
+}
+#stat {
+	font-size: smaller;
+}
+#stat p {
+	margin-top: 20px;
+	text-decoration: underline;
+}
+#stat span {
+	font-weight: bold;
+}
+
+@media
+only screen and (max-width: 1248px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+	#algoTable table, #algoTable thead, #algoTable tbody, #algoTable th, #algoTable td, #algoTable tr {
+		display: block;
+	}
+	#algoTable  > tbody > tr > th {
+		border: 1px solid #888888 !important;
+	}
+	#algoTable  > tbody > tr > td {
+		border: 1px solid #888888 !important;
+	}
+	#algoTable th {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#algoTable tr {
+		text-align: left;
+		margin: 5px;
+	}
+	#algoTable tr:nth-of-type(odd) {
+		background-color: #CCCCCC;
+	}
+	#algoTable td {
+		min-height: 50px;
+		border: none;
+		border-bottom: 1px solid #888888;
+		position: relative;
+		padding-left: 50%;
+	}
+	#algoTable td:before {
+		min-height: 50px;
+		position: absolute;
+		left: 20px;
+		width: 50%;
+		padding-right: 10px;
+		white-space: nowrap;
+		font-weight: bold;
+	}
+	
+	#algoTable td:nth-of-type(1):before { content: "Opció"; }
+	#algoTable td:nth-of-type(2):before { content: "Nincs ütközés (összes)"; }
+	#algoTable td:nth-of-type(3):before { content: "Nincs ütközés ÉS 3-as fontosság"; }
+	#algoTable td:nth-of-type(4):before { content: "Ütközés egyéni programmal"; }
+	#algoTable td:nth-of-type(5):before { content: "Kijelölés"; }
+}

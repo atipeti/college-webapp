@@ -1,0 +1,23 @@
+@import url("common.css");
+
+h4 {
+	margin-bottom: 20px;
+}
+table.table-bordered > tbody > tr > td {
+	border: 1px solid #000000;
+}
+tr:hover {
+	background-color: #CCCCCC;
+}
+.firstCol {
+	text-align: right;
+}
+.btn {
+	margin: 5px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+}
+.btn:hover {
+	border: 1px solid #000000;
+}

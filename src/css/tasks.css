@@ -1,0 +1,61 @@
+@import url("common.css");
+@import url("tableCommon.css");
+
+h5 {
+	margin-bottom: 20px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+table.table-bordered > tbody > tr > th {
+	border: 1px solid #000000;
+}
+table.table-bordered > tbody > tr > td {
+	border: 1px solid #000000;
+}
+th {
+	text-align: center;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+td a {
+	color: #000000;
+	text-decoration: underline;
+}
+#tasks .btn, #selectedTask .btn {
+	margin: 5px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 20px;
+}
+#tasks .btn:hover {
+	border: 1px solid #000000;
+}
+#selectedTask .btn:hover {
+	border: 1px solid #000000;
+}
+#taskDiv {
+	cursor: move;
+	cursor: grab;
+}
+#taskDiv:active {
+	cursor: grabbing;
+}
+
+@media
+only screen and (max-width: 1248px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+	/* Label the data */
+	#firstTable td:nth-of-type(1):before { content: "Feladat"; }
+	#firstTable td:nth-of-type(2):before { content: "Felelős"; }
+	#firstTable td:nth-of-type(3):before { content: "Leírás"; }
+	#firstTable td:nth-of-type(4):before { content: "Határidő"; }
+	#firstTable td:nth-of-type(5):before { content: "Státusz"; }
+	#firstTable td:nth-of-type(6):before { content: "Szerk."; }
+	#firstTable td:nth-of-type(7):before { content: "Törlés"; }
+	
+	#secondTable td:nth-of-type(1):before { content: "Elvégzendő"; }
+	#secondTable td:nth-of-type(2):before { content: "Folyamatban"; }
+	#secondTable td:nth-of-type(3):before { content: "Kész"; }
+}

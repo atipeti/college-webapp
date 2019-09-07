@@ -1,0 +1,42 @@
+@import url("common.css");
+
+table {
+	text-align: center;
+}
+table a {
+	color: #000000;
+}
+th:nth-of-type(7), td:nth-of-type(7) a {
+	color: #FF0000 !important;
+}
+.today {
+	background-color: #AAAAAA !important;
+	font-weight: bold;
+}
+.selected {
+	border-bottom: 2px solid #FF0000 !important; /*red*/
+}
+.busy {
+	background-color: #BBBBBB;
+}
+.eventDiv, .progDiv {
+	margin: 10px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 30px;
+	font-variant: small-caps;
+}
+.eventDiv:hover, .progDiv:hover {
+	border: 1px solid #000000;
+}
+.eventDiv a, .progDiv a {
+	color: #000000;
+	text-decoration: underline;
+}
+.eventDiv span {
+	position: relative;
+	float: right;
+}

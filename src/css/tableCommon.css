@@ -1,0 +1,42 @@
+/* https://css-tricks.com/responsive-data-tables/ */
+@media
+only screen and (max-width: 1248px), (min-device-width: 768px) and (max-device-width: 1024px) {
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+	table.table-bordered > tbody > tr > th {
+		border: 1px solid #888888 !important;
+	}
+	table.table-bordered > tbody > tr > td {
+		border: 1px solid #888888 !important;
+	}
+	th {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr {
+		/* border: 1px solid #888888; */
+		text-align: left;
+		margin: 5px;
+	}
+	tr:nth-of-type(odd) {
+		background-color: #CCCCCC;
+	}
+	.table td {
+		min-height: 50px;
+		border: none;
+		border-bottom: 1px solid #888888;
+		position: relative;
+		padding-left: 50%;
+	}
+	.table td:before {
+		min-height: 50px;
+		position: absolute;
+		left: 20px;
+		width: 50%;
+		padding-right: 10px;
+		white-space: nowrap;
+		font-weight: bold;
+	}
+}

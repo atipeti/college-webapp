@@ -1,0 +1,21 @@
+@import url("common.css");
+
+.eventDiv, .newPostsDiv {
+	margin: 10px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	border-radius: 30px;
+}
+.eventDiv:hover, .newPostsDiv:hover {
+	border: 1px solid #000000;
+}
+.eventDiv a, .newPostsDiv a {
+	color: #000000;
+	text-decoration: underline;
+}
+p {
+	font-style: italic;
+}
